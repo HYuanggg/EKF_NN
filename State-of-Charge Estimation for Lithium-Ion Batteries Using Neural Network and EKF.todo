@@ -1,0 +1,25 @@
+2010
+☐ NN用来建立状态空间方程（状态：前一端电压，当前SOC）（找参数？）
+I. Introduction
+II. Modeling
+    A. SOC as State-Space Variable
+    B. Proposed Model
+III. Estimation Algorithm
+    A. Adaptive EKF
+    B. Linearization of the Proposed Model
+IV. Implementation And Experimental Setup
+    A. Battery SOC Estimation
+    B. Experimental Tests
+V. Conclusion And Discussions
+
+
+感觉不太好，用NN来对电池建模，
+问题在于：
+    ——能明确哪些因变量吗？
+    ——把能想到的变量都用上；
+
+    ——能确定神经网络结构吗？
+    ——似乎有一定的知识指明多大的网络可以模拟多复杂的函数；
+
+    ——如何设计实验以充分训练网络呢？要考虑温度、老化、工况、电池类型。。。。。。
+    ——这可以设计吗。。。。。。就只说电池类型，如果实验量不大，每种电池可以设计一套实验。
